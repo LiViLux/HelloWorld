@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lists MariaDB content</title>
+<body>
+
+    <table>
+        <thead>
+        <th>Name</th>
+        <th>Age</th>
+        </thead>
+
+        {% for row in rows %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p><a href="/">Home</a></p>
+    <p><a href="/update">Update</a></p>
+</head>
+
+
+</body>
+</html>
